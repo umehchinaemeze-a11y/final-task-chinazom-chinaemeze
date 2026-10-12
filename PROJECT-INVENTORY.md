@@ -14,19 +14,29 @@ Deadline: October 19, 2026
 
 
 
-\* Repository URL: Not created
+\* Repository URL: https://github.com/umehchinaemeze-a11y/rota
 
-\* Backend deployment: Not started
+\* Live deployment: https://rota-lovat-gamma.vercel.app/
+
+\* Frontend dashboard: Complete
+
+\* Overview, Schedule, and Team navigation: Verified
+
+\* Add Shift interaction: Verified (client-side state only)
+
+\* Production build: Passed locally
+
+\* Backend/API: Not implemented
+
+\* Persistent database storage: Not implemented
 
 \* Android development build: Not started
 
-\* Tests: Not started
+\* Automated tests: Not started
 
 \* Demo video: Not started
 
-\* Current status: Not started
-
-
+\* Current status: Frontend deployed; backend and remaining deliverables in progress
 
 2\. Matinee
 
@@ -94,17 +104,17 @@ Deadline: October 19, 2026
 
 
 
-\* CV: Not started
+\* CV: Draft created; final review and polishing pending
 
-\* Portfolio website: Not started
+\* Portfolio website: Complete
 
-\* Portfolio deployment: Not started
+\* Portfolio deployment: Complete — https://chinazom-portfolio.vercel.app/
+
+\* Portfolio source code: Available in the final-task-chinazom-chinaemeze repository
 
 \* LinkedIn profile review: Not started
 
-\* Current status: Not started
-
-
+\* Current status: Portfolio deployed; CV finalization and LinkedIn review pending
 
 Notes
 
