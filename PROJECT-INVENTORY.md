@@ -26,9 +26,9 @@ Deadline: October 19, 2026
 
 \* Production build: Passed locally
 
-\* Backend/API: Not implemented
+\* Backend/API: Implemented and working in production
 
-\* Persistent database storage: Not implemented
+\* Persistent database storage: Implemented and verified in production
 
 \* Android development build: Not started
 
