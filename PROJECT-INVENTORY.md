@@ -36,7 +36,7 @@ Deadline: October 19, 2026
 
 \* Demo video: Not started
 
-\* Current status: Frontend deployed; backend and remaining deliverables in progress
+\* Current status: Core frontend and persistent backend working in production; automated tests, Android development build, and demo video remain pending.
 
 2\. Matinee
 
