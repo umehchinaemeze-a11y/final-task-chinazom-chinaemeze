@@ -42,9 +42,9 @@ Deadline: October 19, 2026
 
 
 
-\* Repository URL: Not created
+\* Repository URL: https://github.com/umehchinaemeze-a11y/matinee
 
-\* Backend deployment: Not started
+\* Backend deployment: Complete — https://matinee-two.vercel.app/
 
 \* Android development build: Not started
 
@@ -54,7 +54,7 @@ Deadline: October 19, 2026
 
 \* Demo video: Not started
 
-\* Current status: Not started
+\* Current status: Next.js frontend deployed on Vercel; Neon PostgreSQL database created and seeded with 12 movies; GET /api/movies verified in production (returns all 12 movies with the expected structure); local lint and production build passed before deployment. Android build, Figma design, tests/load testing, demo video, technical documentation, LinkedIn post, and portfolio case study remain pending.
 
 
 
