@@ -82,13 +82,13 @@ Part 2B — Matinee
 
 \* \[ ]	Deploy backend.
 
-\* \[ ]	Provide Figma design link.
+\* \[ ]	Provide Figma design link: https://www.figma.com/design/DCxpKWttoPIFKmtIueGq2u/Untitled?node-id=0-1&t=OAOmjcYzAPD9jXwd-1
 
 \* \[ ]	Write required technical documentation.
 
 \* \[ ]	Run load test and document results.
 
-\* \[ ]	Record a three-minute demo.
+\* \[ ]	Record a three-minute demo: https://drive.google.com/file/d/1PphqRPtJF2HJiLwRedNRsuXBHL3yyQgC/view?usp=drivesdk
 
 \* \[ ]	Publish LinkedIn post.
 

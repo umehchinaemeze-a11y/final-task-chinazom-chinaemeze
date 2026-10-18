@@ -44,17 +44,37 @@ Deadline: October 19, 2026
 
 \* Repository URL: https://github.com/umehchinaemeze-a11y/matinee
 
-\* Backend deployment: Complete — https://matinee-two.vercel.app/
+\* Backend deployment: Complete — production API verified with 12 movie records (https://matinee-two.vercel.app/)
 
-\* Android development build: Not started
+\* Android development build: Complete — debug APK built, installed, and visually verified on the Android emulator
 
-\* Figma design: Not started
+\* Build type: Development/debug APK using Capacitor server.url to load https://matinee-two.vercel.app/; internet connection required
 
-\* Tests: Not started
+\* Emulator installation: Verified
 
-\* Demo video: Not started
+\* App launch: Verified
 
-\* Current status: Next.js frontend deployed on Vercel; Neon PostgreSQL database created and seeded with 12 movies; GET /api/movies verified in production (returns all 12 movies with the expected structure); local lint and production build passed before deployment. Android build, Figma design, tests/load testing, demo video, technical documentation, LinkedIn post, and portfolio case study remain pending.
+\* Live Matinee movie catalog: Visually confirmed working in the Android emulator
+
+\* Standalone/offline Android app: Not implemented
+
+\* APK path: matinee/android/app/build/outputs/apk/debug/app-debug.apk
+
+\* Technical documentation: Complete — matinee/TECHNICAL-DOCUMENTATION.md
+
+\* Load testing and results documentation: Complete — matinee/LOAD-TEST-RESULTS.md
+
+\* Three-minute demo video: Complete — recorded on iPhone, edited in iMovie, exported at approximately 2 minutes 59 seconds, reviewed, and backed up to Google Drive (https://drive.google.com/file/d/1PphqRPtJF2HJiLwRedNRsuXBHL3yyQgC/view?usp=drivesdk)
+
+\* Figma design link: https://www.figma.com/design/DCxpKWttoPIFKmtIueGq2u/Untitled?node-id=0-1&t=OAOmjcYzAPD9jXwd-1
+
+\* Automated tests: Pending
+
+\* LinkedIn post: Pending
+
+\* Matinee case study in the portfolio: Pending
+
+\* Current status: Backend deployment complete (production API verified with 12 movie records at https://matinee-two.vercel.app/); Android development build complete (debug APK built, installed, and visually verified on the Android emulator via Capacitor server.url; internet connection required, not standalone/offline); technical documentation complete (matinee/TECHNICAL-DOCUMENTATION.md); load testing and results documentation complete (matinee/LOAD-TEST-RESULTS.md); three-minute demo video complete (recorded on iPhone, edited in iMovie, ~2m 59s, reviewed, backed up to Google Drive at https://drive.google.com/file/d/1PphqRPtJF2HJiLwRedNRsuXBHL3yyQgC/view?usp=drivesdk); Figma prototype link provided (https://www.figma.com/design/DCxpKWttoPIFKmtIueGq2u/Untitled?node-id=0-1&t=OAOmjcYzAPD9jXwd-1). Automated tests, LinkedIn post, and Matinee case study in the portfolio remain pending.
 
 
 
