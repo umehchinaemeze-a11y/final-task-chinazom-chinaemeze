@@ -29,7 +29,7 @@ Part 2A — Rota
 * [x] Create and publish the Rota repository (Repository published and verified on GitHub at https://github.com/umehchinaemeze-a11y/rota; main branch synchronized at commit 3eb71cfd5f72145032b2124692620afee9cff942).
 * [ ] Build Android development version (Not started).
 * [x] Deploy backend (Production deployment verified on Vercel at https://rota-lovat-gamma.vercel.app/ running commit 3eb71cf with PostgreSQL persistence and authenticated shift management).
-* [ ] Write README.md and required technical documentation (Not started).
+* [x] Write README.md and required technical documentation (Verified complete in rota/web/TECHNICAL-DOCUMENTATION.md).
 * [ ] Create architecture diagram (Not started).
 * [ ] Test permissions, team isolation, and subscription proration (32 unit/regression tests passing in commit 3eb71cf for role permissions, ownership isolation, and legacy record protection; production authentication verified; subscription proration tests pending).
 * [ ] Run load test with 200 virtual users and document results (Not started).
