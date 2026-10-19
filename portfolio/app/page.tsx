@@ -183,9 +183,38 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-10 grid gap-5 md:grid-cols-2">
-          <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-[#c5f467]/50 sm:p-9">
-            <p className="text-sm font-semibold text-[#c5f467]">01 / Rota</p>
-            <h3 className="mt-5 text-2xl font-bold">Rota</h3>
+          <article className="group relative rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-[#c5f467]/50 sm:p-9">
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-semibold text-[#c5f467]">01 / Rota</p>
+              <div className="relative z-10 flex items-center gap-3">
+                <a
+                  href="https://github.com/umehchinaemeze-a11y/rota"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-white/50 transition hover:text-[#c5f467]"
+                >
+                  GitHub ↗
+                </a>
+                <a
+                  href="https://rota-lovat-gamma.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs font-semibold text-[#c5f467] opacity-0 transition group-hover:opacity-100 hover:text-white"
+                >
+                  Live App ↗
+                </a>
+              </div>
+            </div>
+            <h3 className="mt-5 text-2xl font-bold transition group-hover:text-[#c5f467]">
+              <a
+                href="https://rota-lovat-gamma.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="after:absolute after:inset-0"
+              >
+                Rota
+              </a>
+            </h3>
             <p className="mt-3 leading-7 text-white/60">
               An application project focused on building practical software
               with a clean user experience and reliable functionality.
@@ -200,9 +229,14 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <p className="mt-7 text-sm font-semibold text-[#c5f467]">
-              Status: In progress
-            </p>
+            <div className="mt-7 flex flex-wrap items-center justify-between gap-2">
+              <p className="text-sm font-semibold text-[#c5f467]">
+                Backend deployed · Documentation available
+              </p>
+              <span className="relative z-10 text-xs font-semibold text-[#c5f467] transition group-hover:translate-x-0.5">
+                Open App ↗
+              </span>
+            </div>
           </article>
           <Link
             href="/matinee"
