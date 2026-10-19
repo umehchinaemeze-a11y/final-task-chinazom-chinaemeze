@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const skills = [
   "JavaScript",
   "TypeScript",
@@ -202,9 +204,19 @@ export default function Home() {
               Status: In progress
             </p>
           </article>
-          <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-[#c5f467]/50 sm:p-9">
-            <p className="text-sm font-semibold text-[#c5f467]">02 / Matinee</p>
-            <h3 className="mt-5 text-2xl font-bold">Matinee</h3>
+          <Link
+            href="/matinee"
+            className="group block rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-[#c5f467]/50 sm:p-9"
+          >
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-semibold text-[#c5f467]">02 / Matinee</p>
+              <span className="text-xs font-semibold text-[#c5f467] opacity-0 transition group-hover:opacity-100">
+                View Case Study ↗
+              </span>
+            </div>
+            <h3 className="mt-5 text-2xl font-bold transition group-hover:text-[#c5f467]">
+              Matinee
+            </h3>
             <p className="mt-3 leading-7 text-white/60">
               A cinema-focused application project exploring user-friendly
               booking experiences and application design.
@@ -219,10 +231,11 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <p className="mt-7 text-sm font-semibold text-[#c5f467]">
-              Status: In progress
+            <p className="mt-7 flex items-center gap-1.5 text-sm font-semibold text-[#c5f467]">
+              <span>Case study available</span>
+              <span className="transition group-hover:translate-x-1">→</span>
             </p>
-          </article>
+          </Link>
           <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-7 transition hover:border-[#c5f467]/50 sm:p-9">
             <p className="text-sm font-semibold text-[#c5f467]">
               03 / System Design
