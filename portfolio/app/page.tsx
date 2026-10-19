@@ -199,21 +199,19 @@ export default function Home() {
                   href="https://rota-lovat-gamma.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-semibold text-[#c5f467] opacity-0 transition group-hover:opacity-100 hover:text-white"
+                  className="text-xs font-semibold text-white/50 transition hover:text-[#c5f467]"
                 >
                   Live App ↗
                 </a>
               </div>
             </div>
             <h3 className="mt-5 text-2xl font-bold transition group-hover:text-[#c5f467]">
-              <a
-                href="https://rota-lovat-gamma.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/rota"
                 className="after:absolute after:inset-0"
               >
                 Rota
-              </a>
+              </Link>
             </h3>
             <p className="mt-3 leading-7 text-white/60">
               An application project focused on building practical software
@@ -231,11 +229,15 @@ export default function Home() {
             </div>
             <div className="mt-7 flex flex-wrap items-center justify-between gap-2">
               <p className="text-sm font-semibold text-[#c5f467]">
-                Backend deployed · Documentation available
+                Case study available
               </p>
-              <span className="relative z-10 text-xs font-semibold text-[#c5f467] transition group-hover:translate-x-0.5">
-                Open App ↗
-              </span>
+              <Link
+                href="/rota"
+                className="relative z-10 flex items-center gap-1.5 text-xs font-semibold text-[#c5f467] transition group-hover:translate-x-0.5 hover:text-white"
+              >
+                <span>View Case Study</span>
+                <span>→</span>
+              </Link>
             </div>
           </article>
           <Link
