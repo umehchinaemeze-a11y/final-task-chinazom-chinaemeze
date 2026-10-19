@@ -26,12 +26,12 @@ Part 1 — Job Preparation
 
 Part 2A — Rota
 
-* [ ] Create and publish the Rota repository (Repository published at https://github.com/umehchinaemeze-a11y/rota; local branch main is ahead of origin/main by 1 commit 3eb71cfd5f72145032b2124692620afee9cff942; remote push pending).
+* [x] Create and publish the Rota repository (Repository published and verified on GitHub at https://github.com/umehchinaemeze-a11y/rota; main branch synchronized at commit 3eb71cfd5f72145032b2124692620afee9cff942).
 * [ ] Build Android development version (Not started).
-* [ ] Deploy backend (Core scheduling dashboard deployed at https://rota-lovat-gamma.vercel.app/; deployment of local commit 3eb71cf with authenticated shift management and authorization pending).
+* [x] Deploy backend (Production deployment verified on Vercel at https://rota-lovat-gamma.vercel.app/ running commit 3eb71cf with PostgreSQL persistence and authenticated shift management).
 * [ ] Write README.md and required technical documentation (Not started).
 * [ ] Create architecture diagram (Not started).
-* [ ] Test permissions, team isolation, and subscription proration (32 unit/regression tests passing locally in commit 3eb71cf for role permissions, ownership isolation, and legacy record protection; subscription proration and production verification pending).
+* [ ] Test permissions, team isolation, and subscription proration (32 unit/regression tests passing in commit 3eb71cf for role permissions, ownership isolation, and legacy record protection; production authentication verified; subscription proration tests pending).
 * [ ] Run load test with 200 virtual users and document results (Not started).
 * [ ] Record a three-minute demo (Not started).
 * [ ] Publish LinkedIn post (Not started).
@@ -49,7 +49,7 @@ Part 2B — Matinee
 * [x] Run load test and document results (Verified complete in matinee/LOAD-TEST-RESULTS.md).
 * [x] Record a three-minute demo: https://drive.google.com/file/d/1PphqRPtJF2HJiLwRedNRsuXBHL3yyQgC/view?usp=drivesdk
 * [ ] Publish LinkedIn post (Pending).
-* [x] Add Matinee case study to portfolio (Complete — implemented in portfolio/app/matinee/page.tsx, live at https://chinazom-portfolio.vercel.app/matinee).
+* [x] Add Matinee case study to portfolio (Complete — committed in c8cd47bc7d7d4e6e9a36722adf8932432fcf7f94, deployed and verified live at https://chinazom-portfolio.vercel.app/matinee).
 
 ---
 
