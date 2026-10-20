@@ -227,18 +227,13 @@ export default function Home() {
                 </span>
               ))}
             </div>
-            <div className="mt-7 flex flex-wrap items-center justify-between gap-2">
-              <p className="text-sm font-semibold text-[#c5f467]">
-                Case study available
-              </p>
-              <Link
-                href="/rota"
-                className="relative z-10 flex items-center gap-1.5 text-xs font-semibold text-[#c5f467] transition group-hover:translate-x-0.5 hover:text-white"
-              >
-                <span>View Case Study</span>
-                <span>→</span>
-              </Link>
-            </div>
+            <Link
+              href="/rota"
+              className="relative z-10 mt-7 flex items-center gap-1.5 text-sm font-semibold text-[#c5f467] transition group-hover:translate-x-0.5 hover:text-white"
+            >
+              <span>View Case Study</span>
+              <span>→</span>
+            </Link>
           </article>
           <Link
             href="/matinee"
@@ -246,9 +241,6 @@ export default function Home() {
           >
             <div className="flex items-center justify-between">
               <p className="text-sm font-semibold text-[#c5f467]">02 / Matinee</p>
-              <span className="text-xs font-semibold text-[#c5f467] opacity-0 transition group-hover:opacity-100">
-                View Case Study ↗
-              </span>
             </div>
             <h3 className="mt-5 text-2xl font-bold transition group-hover:text-[#c5f467]">
               Matinee
@@ -268,7 +260,7 @@ export default function Home() {
               ))}
             </div>
             <p className="mt-7 flex items-center gap-1.5 text-sm font-semibold text-[#c5f467]">
-              <span>Case study available</span>
+              <span>View Case Study</span>
               <span className="transition group-hover:translate-x-1">→</span>
             </p>
           </Link>

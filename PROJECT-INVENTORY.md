@@ -24,9 +24,9 @@ Deadline: October 19, 2026
 * Load test (200 virtual users): Not started
 * Technical documentation: Complete — rota/web/TECHNICAL-DOCUMENTATION.md (covers architecture, request flow, session security, database schema, permission matrix, and automated tests)
 * Three-minute demo video: Not started
-* Portfolio case study: Not started
+* Portfolio case study: Complete — live at https://chinazom-portfolio.vercel.app/rota
 * LinkedIn post: Not started
-* Current status: Core dashboard, database persistence, authenticated shift management, session validation, role-based authorization, 32 automated tests, and technical documentation are verified in production and documented. Android development build, 200-VU load test, architecture diagram, demo video, and case study remain pending.
+* Current status: Core dashboard, database persistence, authenticated shift management, session validation, role-based authorization, 32 automated tests, technical documentation, and portfolio case study are verified in production and documented. Android development build, 200-VU load test, architecture diagram, and demo video remain pending.
 
 ---
 
