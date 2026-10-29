@@ -462,9 +462,9 @@ export default function RotaCaseStudy() {
           <p className="mt-4 leading-8 text-white/70">
             A comprehensive automated test suite executes using Node.js&apos;s
             built-in test runner (<code>node --test</code>) via{" "}
-            <code>tests/shifts.test.mjs</code>, verifying security assertions,
-            cryptographic integrity, and business logic without external test
-            framework dependencies.
+            <code>npm test</code>, verifying security assertions, cryptographic
+            integrity, multi-tenant isolation, Stripe billing, and durable
+            persistence without external test framework dependencies.
           </p>
 
           <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
@@ -474,45 +474,45 @@ export default function RotaCaseStudy() {
                   Automated Test Suite Summary
                 </h3>
                 <p className="mt-1 text-xs text-white/50">
-                  Command: <code>node --experimental-strip-types --test tests/shifts.test.mjs</code>
+                  Command: <code>npm test</code> (Node.js native test runner)
                 </p>
               </div>
               <div className="flex items-center gap-2 rounded-full border border-[#c5f467]/30 bg-[#c5f467]/10 px-4 py-1.5 text-xs font-bold text-[#c5f467]">
                 <span>●</span>
-                <span>32 / 32 Passed (100%)</span>
+                <span>374 / 374 Passed across 68 Suites (100%)</span>
               </div>
             </div>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 1: Scrypt Hashing</p>
-                <p className="mt-1 text-2xl font-bold text-white">5 Tests</p>
-                <p className="mt-1 text-xs text-white/50">Unique salts, hash verification, bad password rejection, malformed hex handling.</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Core Security &amp; Auth</p>
+                <p className="mt-1 text-2xl font-bold text-white">52 Tests</p>
+                <p className="mt-1 text-xs text-white/50">Scrypt password hashing, constant-time comparisons, HMAC-SHA256 session tokens, signature forgery rejection.</p>
               </div>
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 2: HMAC Sessions</p>
-                <p className="mt-1 text-2xl font-bold text-white">8 Tests</p>
-                <p className="mt-1 text-xs text-white/50">HMAC-SHA256 creation, secret guards, payload tampering, signature forgery, expired token rejection.</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Shifts &amp; Legacy Recovery</p>
+                <p className="mt-1 text-2xl font-bold text-white">45 Tests</p>
+                <p className="mt-1 text-xs text-white/50">Strict ISO-8601 calendar validation, role-gated shift mutations, legacy NULL team_id migration recovery.</p>
               </div>
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 3: RBAC Authorization</p>
-                <p className="mt-1 text-2xl font-bold text-white">6 Tests</p>
-                <p className="mt-1 text-xs text-white/50">Unauthenticated denial, owner permissions, non-owner denial, legacy shift protection, manager override.</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Multi-Tenant Isolation</p>
+                <p className="mt-1 text-2xl font-bold text-white">58 Tests</p>
+                <p className="mt-1 text-xs text-white/50">Direct workspace membership enforcement, team boundary controls, cross-tenant data access rejection.</p>
               </div>
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 4: Login &amp; Sanitization</p>
-                <p className="mt-1 text-2xl font-bold text-white">4 Tests</p>
-                <p className="mt-1 text-xs text-white/50">Missing field validation, email normalization, leak-free profile exposure.</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Stripe Billing Engine</p>
+                <p className="mt-1 text-2xl font-bold text-white">70 Tests</p>
+                <p className="mt-1 text-xs text-white/50">Pure mathematical proration calculations, seat-limit capacity caps, plan upgrades, downgrades, and cancellations.</p>
               </div>
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 5: Payload Validation</p>
-                <p className="mt-1 text-2xl font-bold text-white">5 Tests</p>
-                <p className="mt-1 text-xs text-white/50">Valid payload acceptance, date format enforcement, invalid calendar date rejection (e.g. Feb 31).</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Webhooks &amp; Idempotency</p>
+                <p className="mt-1 text-2xl font-bold text-white">49 Tests</p>
+                <p className="mt-1 text-xs text-white/50">Raw-body HMAC-SHA256 signature verification, replay protection, duplicate event suppression, canonical lifecycle handling.</p>
               </div>
               <div className="rounded-xl border border-white/5 bg-black/20 p-4">
-                <p className="text-xs font-semibold text-[#c5f467]">Suite 6: Schedule State</p>
-                <p className="mt-1 text-2xl font-bold text-white">4 Tests</p>
-                <p className="mt-1 text-xs text-white/50">Idempotent updates, chronological sorting, immediate deletion, ID preservation.</p>
+                <p className="text-xs font-semibold text-[#c5f467]">Durable Persistence &amp; Build</p>
+                <p className="mt-1 text-2xl font-bold text-white">30 Tests</p>
+                <p className="mt-1 text-xs text-white/50">PostgreSQL ledger storage, transactional retry safety, fallback guards, and lazy Neon client proxy for build safety.</p>
               </div>
             </div>
           </div>
@@ -598,23 +598,23 @@ export default function RotaCaseStudy() {
               <ul className="mt-4 space-y-3 text-sm leading-6 text-white/65">
                 <li className="flex items-start gap-2">
                   <span className="text-amber-400 font-bold">•</span>
-                  <span><strong>No Android Mobile Build:</strong> Rota is deployed as a responsive web application. No Capacitor Android wrapper or native APK currently exists.</span>
+                  <span><strong>Android Mobile Build:</strong> Capacitor Android development wrapper implemented and debug APK built (4.1 MB; launched in emulator, but interactive sign-in remains unverified due to emulator freeze; development build, not a production release).</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-400 font-bold">•</span>
-                  <span><strong>No 200-VU Load Test:</strong> A 200-virtual-user automated stress test benchmark has not yet been executed for the Rota production API.</span>
+                  <span><strong>200-VU Load Test Environment:</strong> Load testing harness with automated production guards is complete; execution against production is prohibited, awaiting an isolated dedicated test environment.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-400 font-bold">•</span>
-                  <span><strong>No Demo Video:</strong> A recorded video walkthrough has not yet been produced for Rota.</span>
+                  <span><strong>Database Staging Alignment &amp; Billing Durability:</strong> Team isolation schema migration and PostgreSQL durable billing storage (with 21 persistence &amp; transactional retry tests) are implemented and verified offline; live execution of <code>migrate-billing-persistence.mjs</code> against Neon awaits disposable staging branch setup (production database protected).</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-400 font-bold">•</span>
-                  <span><strong>No Standalone Architecture Diagram:</strong> The system architecture is documented in text and tables, but a dedicated vector diagram asset is not included.</span>
+                  <span><strong>External Billing Gateway:</strong> Pure mathematical proration engine, checkout session generation, HMAC-SHA256 webhook verification, and seat-limit concurrency controls are implemented and verified offline with 49 tests; live Stripe test-mode registration on Vercel awaits provider credentials.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-amber-400 font-bold">•</span>
-                  <span><strong>No Subscription Proration:</strong> Multi-tier billing, Stripe webhooks, and subscription proration algorithms are not implemented.</span>
+                  <span><strong>Demo Video Walkthrough:</strong> Video link provided on Google Drive based on user confirmation; playback not independently verified in current terminal environment.</span>
                 </li>
               </ul>
             </div>
@@ -626,19 +626,19 @@ export default function RotaCaseStudy() {
               <ul className="mt-4 space-y-3 text-sm leading-6 text-white/65">
                 <li className="flex items-start gap-2">
                   <span className="text-[#c5f467] font-bold">→</span>
-                  <span><strong>Mobile APK Packaging:</strong> Package the responsive web client using Capacitor for native Android and iOS distribution.</span>
+                  <span><strong>Production Mobile Distribution:</strong> Sign and package release APK with offline roster caching and push notification support.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#c5f467] font-bold">→</span>
-                  <span><strong>Capacity &amp; Stress Testing:</strong> Execute automated load tests with k6 or autocannon to establish throughput thresholds under concurrent load.</span>
+                  <span><strong>Staging Benchmark Execution:</strong> Execute 200-VU stress test against a dedicated local or isolated staging server.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#c5f467] font-bold">→</span>
-                  <span><strong>Shift Swap Requests:</strong> Introduce employee-to-employee shift trade proposals with supervisory approval workflows.</span>
+                  <span><strong>Live Neon Branch Migration:</strong> Run verified preflight inspection and atomic DDL transaction on a verified Neon staging branch.</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#c5f467] font-bold">→</span>
-                  <span><strong>Calendar Integration:</strong> Export personal schedules via iCalendar (.ics) feeds and Google Calendar synchronization.</span>
+                  <span><strong>Production Stripe Webhooks:</strong> Configure live webhook endpoints and connect billing ledger with payment gateway.</span>
                 </li>
               </ul>
             </div>
@@ -652,7 +652,7 @@ export default function RotaCaseStudy() {
           </p>
           <h2 className="mt-2 text-3xl font-black">Project Deliverables &amp; Links</h2>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-white/60">
-            Review the live production application and the GitHub source code repository:
+            Review the live production application, GitHub repository, Android debug APK, and demo video:
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -671,6 +671,22 @@ export default function RotaCaseStudy() {
               className="rounded-full border border-white/20 px-7 py-3 text-sm font-semibold transition hover:border-white"
             >
               GitHub Source Code ↗
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1NYix7jnMESQDmWvdRSAqoA0WamcIAvDP/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-white/20 px-7 py-3 text-sm font-semibold transition hover:border-white"
+            >
+              Android Debug APK ↗
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1PphqRPtJF2HJiLwRedNRsuXBHL3yyQgC/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border border-white/20 px-7 py-3 text-sm font-semibold transition hover:border-white"
+            >
+              Demo Video ↗
             </a>
           </div>
 

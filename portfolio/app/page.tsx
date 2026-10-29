@@ -214,11 +214,12 @@ export default function Home() {
               </Link>
             </h3>
             <p className="mt-3 leading-7 text-white/60">
-              An application project focused on building practical software
-              with a clean user experience and reliable functionality.
+              Full-stack shift scheduling and workforce management web app built with
+              Next.js App Router, Neon PostgreSQL, native cryptographic authentication,
+              and multi-tenant team isolation.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {["Application Development", "Full-stack"].map((skill) => (
+              {["Next.js App Router", "PostgreSQL", "Cryptographic Auth", "Team Isolation"].map((skill) => (
                 <span
                   key={skill}
                   className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/60"
